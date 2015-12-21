@@ -89,8 +89,8 @@ top_of_method:
 
 #define test(num, ch)                                          \
     /* test if actually has ch */                              \
-    if ((end = std::find(strloc + 2, strend, ch)) == strend) { \
-        strloc += 2;                                           \
+    if ((end = std::find(strloc + num, strend, ch)) == strend) { \
+        strloc += num;                                           \
         goto top_of_method;                                    \
     }                                                          \
     /* test if ch is escaped */                                \
