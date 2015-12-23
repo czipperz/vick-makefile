@@ -276,7 +276,7 @@ find_some_more:
 std::vector<token> recognize(const contents& contents) {
     std::vector<token> tokens;
     tokens.reserve(contents.cont.size());
-    for(auto itr = contents.cont.begin(); itr != contents.cont.end(); ++itr) {
+    for (auto itr = contents.cont.begin(); itr != contents.cont.end(); ++itr) {
         if (itr->empty()) continue;
 #define rec(i, dist) recognize((i).begin(), (i).begin(), (i).end(),          \
                                dist, tokens)
@@ -308,5 +308,5 @@ int main() {
     contents cont = open_file("Makefile");
     auto tokens = makefile::recognize(cont);
     std::sort(tokens.begin(), tokens.end());
-    for(auto& tok : tokens) { std::cout << tok; }
+    for (auto& tok : tokens) { std::cout << tok; }
 }
