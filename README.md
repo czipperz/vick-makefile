@@ -1,3 +1,3 @@
-# My plugin [![Build Status](https://travis-ci.org/czipperz/vick-plugin-base.svg?branch=master)](https://travis-ci.org/czipperz/vick-plugin-base)
+# vick-makefile [![Build Status](https://travis-ci.org/czipperz/vick-plugin-base.svg?branch=master)](https://travis-ci.org/czipperz/vick-plugin-base)
 
-What it does, how to use in `configuration.cc`
+Parses a Makefile, making a mode for it that highlights some keywords.
