@@ -303,10 +303,10 @@ std::vector<token> recognize(const contents& contents) {
 }
 }
 
-int main() {
-    using namespace vick;
-    contents cont = open_file("Makefile");
-    auto tokens = makefile::recognize(cont);
-    std::sort(tokens.begin(), tokens.end());
-    for (auto& tok : tokens) { std::cout << tok; }
-}
+// int main() {
+//     using namespace vick;
+//     contents cont = open_file("Makefile");
+//     auto tokens = makefile::recognize(cont);
+//     std::sort(tokens.begin(), tokens.end());
+//     for(auto& tok : tokens) { std::cout << tok; }
+// }
